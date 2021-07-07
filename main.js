@@ -1,0 +1,1 @@
+var main_status = 0;
