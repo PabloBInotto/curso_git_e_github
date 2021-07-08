@@ -7,24 +7,24 @@ Não monitorado (Untracked).
 
 Monitorado (Tracked):
 
-> git init [inicia repositorio git];
+> git init [inicia repositório git];
 
-> git add fileName.ext [adiciona arquivopara rastremento];
+> git add fileName.ext [adiciona arquivo para rastreamento];
 
 > git commit -m "Mensagem" [Adiciona o a repositório];
 
 Modificado (Modified):
 
-:: Após cada alteração necessário realizar novamnte os passos anteriores.
+:: Após cada alteração necessário realizar novamente os passos anteriores.
 
-> git add fileName.ext [adiciona arquivopara rastremento];
+> git add fileName.ext [adiciona arquivo para rastreamento];
 
 > git commit -m "Mensagem" [Adiciona o a repositório];
 
 Finalizado (Staged):
 > git pull
 
-# Adicionar usuarios
+# Adicionar usuários
 
 > git config user.name "nome do usuário"
 > git config user.email "email@usuario.com"
@@ -33,7 +33,7 @@ Finalizado (Staged):
 
 > git log :: mostra todos os commits
 > git log --oneline :: mostra o resumo de cada commit em uma única linha
-> git log -n (n = múmero inteiro) :: mostra os últimos commits com base no número (n) passado
+> git log -n (n = número inteiro) :: mostra os últimos commits com base no número (n) passado
 > git log --before "aaaa-mm-dd" :: mostra os commits de um antes da data informada
 > git log --after "aaa-mm-dd" :: mostra os commits após a data informada
 > git log --since= "2 days ago"
@@ -43,7 +43,7 @@ Finalizado (Staged):
 para ter uma lista completa de todas as flags possíveis usar o comando: git help log
 
 # Voltando no tempo como o git
-Toda vez que um commit é realizado, é gerado uma hash e através dela é possível verificar o status do projeto nequele momento.
+Toda vez que um commit é realizado, é gerado uma hash e através dela é possível verificar o status do projeto naquele momento.
 
 > git checkout hash (substituir hash com a hash desejada)
 
@@ -61,7 +61,7 @@ Para deletar um arquivo
 
 *** Importante ***
 
-A cada arquivo modificado é funcamental realizar o "add" e "commit". Isso facilita na resolução de erros e no gerenciamento do projeto como um todo;
+A cada arquivo modificado é fundamental realizar o "add" e "commit". Isso facilita na resolução de erros e no gerenciamento do projeto como um todo;
 
 *** end ***
 
@@ -69,9 +69,9 @@ Antes do commit é uma boa pratica verificar as modificações que foram realiza
 
 > git diff --staged
 
-Também é possivel realziar por hash
+Também é possível realizar por hash
 
-> git diff hash_mais_andtiga..hash_mais_nova
+> git diff hash_mais_antiga..hash_mais_nova
 
 *** Nota *** 
 
@@ -79,11 +79,11 @@ Para finalizar as consultas digite a letra "q"!
 
 *** end ***
 
-Se foi detectado algum erro após a realziação do commit, isso pode ser corrigido dicionando a flag --amend:
+Se foi detectado algum erro após a realização do commit, isso pode ser corrigido adicionando a flag --amend:
 
-> git commit --amend -m "mesagem"
+> git commit --amend -m "mensagem"
 
-É possível tambem retornar o arquivo para o status co commit anterior:
+É possível também retornar o arquivo para o status co commit anterior:
 > git checkout nomeDoArquivo.ext
 
 Tirar um arquivo do status Staged para Unstaged:
@@ -114,24 +114,24 @@ Para fazer a união de duas branch:
 OBS.: Você deve estar com o terminal dentro da branch onde a outra branch será incluída.
       Após realizar o merge e os testes de funcionalidade, a branch que foi incluída pode ser deletada.
 
-Para faser a união de uma branch na base onde ela foi iniciada.
+Para fazer a união de uma branch na base onde ela foi iniciada.
 > git rebase NomeDaBranch
 
 Para clonar um repositório
 git clone url/nomeDoRepositório.git .
 
-OBS.: O "." ao fim do comando é para que a clonagem seja feita napasta local, sem o ponto será criado uma pasta com o nome idêntico ao do projeto clonado.
+OBS.: O "." ao fim do comando é para que a clonagem seja feita na pasta local, sem o ponto será criado uma pasta com o nome idêntico ao do projeto clonado.
 
 Para enviar arquivos ao repositório
 > git push origin master
 OBS.: Deve ser um repositório BARE
 
-Para baixar as atualização do reposiório tem duas opção:
+Para baixar as atualização do repositório tem duas opção:
 Opção 1:
  > git fetch
  > git rebase
 
- Opção 2 (essa é melhor pois faz o fatch e o rebase de uma só vez, não é necessário realziar o dois comandos):
+ Opção 2 (essa é melhor pois faz o fatch e o rebase de uma só vez, não é necessário realizar o dois comandos):
 > git pull -u origin master
 
 # Implementação de um repositório "BARE"
@@ -139,11 +139,11 @@ Opção 1:
 > git init --bare
 ^ Esse será o repositório principal, de onde outros usuários vão clonar e atualizar remotamente
 
-Use o comanto push para enviar atualizações e pull para baixar as atualização feitas por outros usuários;
+Use o comando push para enviar atualizações e pull para baixar as atualização feitas por outros usuários;
 
 # incluir um colaborador no projeto
 
-Menu setitings>Manage Access>Invite a collaborato>
+Menu settings>Manage Access>Invite a collaborator>
  --> Incluir nome no usuário no github ou email e enviar o convite.
 
 # Tags
@@ -162,7 +162,7 @@ Para retornar a versão de desenvolvimento
 > git checkout master
 
 è possível realizar as alterações/correções na versão implementada e atualizar a tag
-> git switch -c correcoes-v1.0
+> git switch -c correções-v1.0
 Apos as correções
 > git add....
 > git commit ...
@@ -176,7 +176,7 @@ E para finalizar as atualizações, envie para o repositório principal
 Quando é feito modificações e não foi feito o add e commit. É possível retornar todos ao estado original como comando
 > git checkout -- .
 
-Caso você saiba exatamente qual é o arquivo, o estado original pode ser reestabelecida com o comando abaixo:
+Caso você saiba exatamente qual é o arquivo, o estado original pode ser re-estabelecida com o comando abaixo:
 > git checkout -- nomeDoArquivo.ext
 
 Para desfazer depois de enviar os arquivos para o repositório
@@ -214,12 +214,12 @@ Toda visualização gráfica é realizado no próprio site do github.
 
 # Gerenciar repositório pelo VS-code
 
-É possível realziar todos os passos e titerações que foram realizado por comandos com os atalhos da IDE VS-Code
+É possível realizar todos os passos e ações que foram realizado por comandos com os atalhos da IDE VS-Code
 
 # Colaborando com projeto Open Source
 1 - Descobrindo e avaliando Projetos
 2 - Trabalhando com Issues
-3 - Trabalnado com Fork
+3 - Trabalhado com Fork
 4 - Realizando Pull Request
 5 - Workflow padrão do github
 6 - Verificando e aceitando Pull Request
@@ -238,6 +238,11 @@ GitHub flow is a lightweight, branch-based workflow that supports teams and proj
 6 - Merge;
 
 # Git no VS-code
-
+Para facilitar o gerenciamento da atividades usando o Git no VS-Code vamos instalar duas extenções:
+GitHistory e Gitlens;
+Opcionalmente também pode instalar o GitGraph <-- esse é chapado!
 
 # Criação de um currículo online
+1 - Clonar o repositório CV-Online
+2 - Criar um repositório na sua conta do github com a seguinte nomenclatura (seuUsuárioNoGithub.github.io) <-- não pode errar essa parte!!
+4 - 
