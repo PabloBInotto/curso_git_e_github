@@ -243,6 +243,9 @@ GitHistory e Gitlens;
 Opcionalmente também pode instalar o GitGraph <-- esse é chapado!
 
 # Criação de um currículo online
-1 - Clonar o repositório CV-Online
+1 - Clonar o repositório CV-Online e mude o nome da pasta para o seu nome de usuário;
 2 - Criar um repositório na sua conta do github com a seguinte nomenclatura (seuUsuárioNoGithub.github.io) <-- não pode errar essa parte!!
-4 - 
+4 - > git config user.name "UsuárioGitHub" // registro do usuário
+5 - > git config user.email "seuemail@mail.com" // registro do email do usuário
+6 - Delete o bloco de dados [remote "origin"] do arquio config da pasta .git (Pasta oculta) para cadastrar a nova origin
+7 - > git remote add origin https://github.com/UsuarioGitHub/UsuarioGitHub.github.io.git // Fazer o setup da origem do repositório... é necessário mudar
