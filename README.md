@@ -255,3 +255,16 @@ Caso você tenha o Python (se não tiver é so instalar, não é nao?) rode o se
 > python -m SimpleHTTPServer 8000
 Após isso abra um navegador e acesse a sua página. Isso é legal para visualizar e fazer todos so testes necessários.
 Caso não queira abrir dessa forma, é só ir até a pasta do arquivo e abrir o arquivo index.html com um navegador web de sua preferência.
+
+…or create a new repository on the command line
+echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/PabloBInotto/test.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/PabloBInotto/test.git
+git branch -M main
+git push -u origin main
