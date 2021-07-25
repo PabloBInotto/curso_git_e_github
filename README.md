@@ -59,6 +59,12 @@ git mv nome_atual novo_nome
 Para deletar um arquivo
 > git rm nome_do_arquivo
 
+Para deletar branch local
+git branch -d localBranchName
+
+Para deletar branch remotamente
+git push origin --delete remoteBranchName
+
 *** Importante ***
 
 A cada arquivo modificado é fundamental realizar o "add" e "commit". Isso facilita na resolução de erros e no gerenciamento do projeto como um todo;
